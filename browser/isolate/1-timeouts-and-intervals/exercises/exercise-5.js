@@ -2,6 +2,7 @@ import { labeledLogger } from "/browser/lib/labeled-logger.js";
 
 const log = labeledLogger();
 
+<<<<<<< HEAD
 // use setTimeout and .charCodeAt() to sort an array of strings
 //  read items from the unsorted array to the sorted array
 //  you can control the order of the sorted array by using different delays in a setTimeout
@@ -13,6 +14,14 @@ const sortArray = (unsorted, sorted) => {
     }, element.charCodeAt());
     return sorted;
   });
+=======
+// sort the array into `sorted` using side-effects
+const sortArray = (unsorted, sorted) => {
+  // iterate through each item in the unsorted array
+  //  for each item creat a timeout
+  //    in the timeout callback, push the item into `sorted`
+  //    the timeout should delay for item.charCodeAt()
+>>>>>>> 019ae303cfd60674674bb6612ebc0ab3a725e6c5
 };
 
 // can you figure out why the tests pass in the order they do?
